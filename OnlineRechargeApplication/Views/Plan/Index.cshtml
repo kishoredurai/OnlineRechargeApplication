@@ -3,11 +3,19 @@
 @{
     ViewData["Title"] = "Index";
 }
-
-<h1>Index</h1>
+<style>
+    .text-right {
+        text-align: right;
+    }
+</style>
+<div class="container">
+    <h1 class="text-center">Detailed Plan</h1>
+    <div class="text-right">
+        <a asp-action="Create" class="btn btn-success"> <i class="fas fa-plus"></i></a>
+    </div>
+</div>
 
 <p>
-    <a asp-action="Create">Create New</a>
 </p>
 <table class="table table-bordered table-striped table-sm">
     <thead class="table-primary">
@@ -32,28 +40,30 @@
 
                 @Html.DisplayNameFor(model => model.planDescription)
             </th>
-            <th></th>
+            <th class="text-center">
+                Action
+            </th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
-                <td>
+                <td class="text-center">
                     @Html.DisplayFor(modelItem => item.planId)
                 </td>
-            <td>
+                <td class="text-center">
                 @Html.DisplayFor(modelItem => item.planName)
             </td>
-            <td>
+                <td class="text-center">
                 @Html.DisplayFor(modelItem => item.planPrice)
             </td>
-            <td>
+                <td class="text-center">
                 @Html.DisplayFor(modelItem => item.planValidity)
             </td>
-                <td>
+                <td class="text-center">
                     @Html.DisplayFor(modelItem => item.planDescription)
                 </td>
-            <td>
+                <td class="text-center">
                 <a asp-action="Edit" asp-route-id="@item.planId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.planId">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.planId">Delete</a>
