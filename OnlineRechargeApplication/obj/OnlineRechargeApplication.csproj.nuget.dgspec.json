@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\source\\repos\\OnlineRechargeApplication\\OnlineRechargeApplication\\OnlineRechargeApplication.csproj": {}
+    "C:\\Users\\HP\\Desktop\\C#\\OnlineRechargeApplication\\OnlineRechargeApplication\\OnlineRechargeApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\source\\repos\\OnlineRechargeApplication\\OnlineRechargeApplication\\OnlineRechargeApplication.csproj": {
+    "C:\\Users\\HP\\Desktop\\C#\\OnlineRechargeApplication\\OnlineRechargeApplication\\OnlineRechargeApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\OnlineRechargeApplication\\OnlineRechargeApplication\\OnlineRechargeApplication.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\C#\\OnlineRechargeApplication\\OnlineRechargeApplication\\OnlineRechargeApplication.csproj",
         "projectName": "OnlineRechargeApplication",
-        "projectPath": "C:\\Users\\DELL\\source\\repos\\OnlineRechargeApplication\\OnlineRechargeApplication\\OnlineRechargeApplication.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\source\\repos\\OnlineRechargeApplication\\OnlineRechargeApplication\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Desktop\\C#\\OnlineRechargeApplication\\OnlineRechargeApplication\\OnlineRechargeApplication.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\C#\\OnlineRechargeApplication\\OnlineRechargeApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,6 +53,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.13, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.28.1, )"
             }
           },
           "imports": [

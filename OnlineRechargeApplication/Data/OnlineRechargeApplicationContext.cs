@@ -19,9 +19,5 @@ namespace OnlineRechargeApplication.Data
         public DbSet<OnlineRechargeApplication.Models.AdminModel>? AdminModel { get; set; }
 
         public DbSet<OnlineRechargeApplication.Models.ServiceProviderModel>? ServiceProviderModel { get; set; }
-
-        public DbSet<OnlineRechargeApplication.Models.PlanModel>? PlanModel { get; set; }
-
-        public DbSet<OnlineRechargeApplication.Models.SelectedPlanModel>? SelectedPlanModel { get; set; }
     }
 }

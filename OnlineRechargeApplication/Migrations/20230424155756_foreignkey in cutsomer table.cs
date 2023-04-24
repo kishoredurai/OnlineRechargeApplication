@@ -4,7 +4,7 @@
 
 namespace OnlineRechargeApplication.Migrations
 {
-    public partial class updatecustomertable : Migration
+    public partial class foreignkeyincutsomertable : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

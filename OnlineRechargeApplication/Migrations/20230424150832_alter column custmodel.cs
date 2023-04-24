@@ -4,13 +4,13 @@
 
 namespace OnlineRechargeApplication.Migrations
 {
-    public partial class updateinplandetails : Migration
+    public partial class altercolumncustmodel : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
-                name: "planDescription",
-                table: "PlanModel",
+                name: "CustomerPassword",
+                table: "CustomerModel",
                 type: "nvarchar(max)",
                 nullable: false,
                 defaultValue: "");
@@ -19,8 +19,8 @@ namespace OnlineRechargeApplication.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "planDescription",
-                table: "PlanModel");
+                name: "CustomerPassword",
+                table: "CustomerModel");
         }
     }
 }

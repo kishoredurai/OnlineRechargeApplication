@@ -36,7 +36,7 @@ namespace OnlineRechargeApplication
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Auth}/{action=Index}");
 
             app.Run();
         }
