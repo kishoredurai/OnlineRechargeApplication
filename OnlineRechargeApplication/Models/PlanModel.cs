@@ -13,6 +13,8 @@ namespace OnlineRechargeApplication.Models
 
         public int planValidity { get; set; }
 
+        public string planDescription { get; set; }
+
         public ServiceProviderModel ServiceProvider { get; set; }
 
     }

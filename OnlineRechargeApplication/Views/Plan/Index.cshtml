@@ -9,17 +9,28 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
-    <thead>
+<table class="table table-bordered table-striped table-sm">
+    <thead class="table-primary">
         <tr>
-            <th>
+            <th class="text-center">
+
+                @Html.DisplayNameFor(model => model.planId)
+            </th>
+            <th class="text-center">
+
                 @Html.DisplayNameFor(model => model.planName)
             </th>
-            <th>
+            <th class="text-center">
+
                 @Html.DisplayNameFor(model => model.planPrice)
             </th>
-            <th>
+            <th class="text-center">
+
                 @Html.DisplayNameFor(model => model.planValidity)
+            </th>
+            <th class="text-center">
+
+                @Html.DisplayNameFor(model => model.planDescription)
             </th>
             <th></th>
         </tr>
@@ -27,6 +38,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.planId)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.planName)
             </td>
@@ -36,6 +50,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.planValidity)
             </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.planDescription)
+                </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.planId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.planId">Details</a> |
