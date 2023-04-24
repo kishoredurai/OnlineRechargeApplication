@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OnlineRechargeApplication.Data;
 
@@ -10,9 +11,10 @@ using OnlineRechargeApplication.Data;
 namespace OnlineRechargeApplication.Migrations
 {
     [DbContext(typeof(OnlineRechargeApplicationContext))]
-    partial class OnlineRechargeApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20230424150832_alter column custmodel")]
+    partial class altercolumncustmodel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -72,12 +74,11 @@ namespace OnlineRechargeApplication.Migrations
                     b.Property<int>("CustomerPhone")
                         .HasColumnType("int");
 
-                    b.Property<int>("ServiceProviderId")
-                        .HasColumnType("int");
+                    b.Property<string>("ServiceProvider")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CustomerId");
-
-                    b.HasIndex("ServiceProviderId");
 
                     b.ToTable("CustomerModel");
                 });
@@ -97,17 +98,6 @@ namespace OnlineRechargeApplication.Migrations
                     b.HasKey("ServiceProviderId");
 
                     b.ToTable("ServiceProviderModel");
-                });
-
-            modelBuilder.Entity("OnlineRechargeApplication.Models.CustomerModel", b =>
-                {
-                    b.HasOne("OnlineRechargeApplication.Models.ServiceProviderModel", "ServiceProvider")
-                        .WithMany()
-                        .HasForeignKey("ServiceProviderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ServiceProvider");
                 });
 #pragma warning restore 612, 618
         }

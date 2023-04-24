@@ -269,3 +269,5 @@ C:\Users\HP\Desktop\C#\OnlineRechargeApplication\OnlineRechargeApplication\obj\D
 C:\Users\HP\Desktop\C#\OnlineRechargeApplication\OnlineRechargeApplication\obj\Debug\net6.0\OnlineRechargeApplication.pdb
 C:\Users\HP\Desktop\C#\OnlineRechargeApplication\OnlineRechargeApplication\obj\Debug\net6.0\OnlineRechargeApplication.genruntimeconfig.cache
 C:\Users\HP\Desktop\C#\OnlineRechargeApplication\OnlineRechargeApplication\obj\Debug\net6.0\ref\OnlineRechargeApplication.dll
+C:\Users\HP\Desktop\C#\OnlineRechargeApplication\OnlineRechargeApplication\bin\Debug\net6.0\SendGrid.dll
+C:\Users\HP\Desktop\C#\OnlineRechargeApplication\OnlineRechargeApplication\bin\Debug\net6.0\StarkbankEcdsa.dll

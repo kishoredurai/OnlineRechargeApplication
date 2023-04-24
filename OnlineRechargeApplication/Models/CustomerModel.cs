@@ -12,10 +12,12 @@ namespace OnlineRechargeApplication.Models
 
         public int CustomerPhone { get; set; }
 
-        public string ServiceProvider { get; set;}
+        public ServiceProviderModel ServiceProvider { get; set;}
 
         public int CountryCode { get; set; }
 
         public string CustomerAddress { get; set; }
+
+        public string CustomerPassword { get; set; }
     }
 }
