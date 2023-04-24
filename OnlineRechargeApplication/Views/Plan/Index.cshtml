@@ -1,0 +1,47 @@
+﻿@model IEnumerable<OnlineRechargeApplication.Models.PlanModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.planName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.planPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.planValidity)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.planName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.planPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.planValidity)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.planId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.planId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.planId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
