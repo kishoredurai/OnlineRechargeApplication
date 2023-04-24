@@ -20,17 +20,17 @@ namespace OnlineRechargeApplication.Controllers
             return View();
         }
 
-        [HttpPost]
-        public ActionResult SignUp(IFormCollection obj)
-        {
-            CustomerModel model = new CustomerModel();
-            model.CustomerName = obj["name"];
-            model.CustomerEmail = obj["email"];
-            model.CustomerAddress = obj["phonenumber"];
-            model.CountryCode = int.Parse(obj["countrycode"]);
-            model.ServiceProvider.ServiceProviderName = obj["serviceprovider"];
+        //[HttpPost]
+        //public ActionResult SignUp(IFormCollection obj)
+        //{
+        //    CustomerModel model = new CustomerModel();
+        //    model.CustomerName = obj["name"];
+        //    model.CustomerEmail = obj["email"];
+        //    model.CustomerAddress = obj["phonenumber"];
+        //    model.CountryCode = int.Parse(obj["countrycode"]);
+        //    model.ServiceProvider.ServiceProviderName = obj["serviceprovider"];
 
 
-        }
+        //}
     }
 }

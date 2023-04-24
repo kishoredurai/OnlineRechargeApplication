@@ -1,0 +1,36 @@
+﻿@model OnlineRechargeApplication.Models.PlanModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>PlanModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.planName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.planName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.planPrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.planPrice)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.planValidity)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.planValidity)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.planId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
