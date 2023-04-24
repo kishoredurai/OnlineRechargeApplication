@@ -541,3 +541,6 @@ C:\Users\DELL\source\repos\OnlineRechargeApplication\OnlineRechargeApplication\o
 C:\Users\DELL\source\repos\OnlineRechargeApplication\OnlineRechargeApplication\obj\Debug\net6.0\OnlineRechargeApplication.genruntimeconfig.cache
 C:\Users\DELL\source\repos\OnlineRechargeApplication\OnlineRechargeApplication\obj\Debug\net6.0\ref\OnlineRechargeApplication.dll
 C:\Users\DELL\source\repos\OnlineRechargeApplication\OnlineRechargeApplication\bin\Debug\net6.0\libman.json
+C:\Users\HP\Desktop\C#\OnlineRechargeApplication\OnlineRechargeApplication\bin\Debug\net6.0\libman.json
+C:\Users\HP\Desktop\C#\OnlineRechargeApplication\OnlineRechargeApplication\bin\Debug\net6.0\SendGrid.dll
+C:\Users\HP\Desktop\C#\OnlineRechargeApplication\OnlineRechargeApplication\bin\Debug\net6.0\StarkbankEcdsa.dll

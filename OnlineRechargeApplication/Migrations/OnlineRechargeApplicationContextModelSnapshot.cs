@@ -66,6 +66,10 @@ namespace OnlineRechargeApplication.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("CustomerPassword")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("CustomerPhone")
                         .HasColumnType("int");
 
